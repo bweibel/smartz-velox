@@ -1,1 +1,13 @@
-{}
+{
+  "theme": {
+    "slug": "smartz-velox",
+    "name": "Velox",
+    "author": "Ben Weibel"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "localhost:8000"
+    }
+  }
+}
