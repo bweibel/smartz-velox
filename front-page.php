@@ -21,7 +21,7 @@ if ( is_home() ) {
 ?>
 	<main id="primary" class="site-main">
 
-		<!-- #calltoaction -->
+		<!-- #call to action -->
 		<section class="call-to-action">
 				<h2>Work better.<br>Play more.</h2>
 				<h3>I.T. support you can trust</h3>
@@ -31,23 +31,24 @@ if ( is_home() ) {
 				<img src="wp-content/themes/velox-dev/assets/images/Velox-Caricatures-Jordan@2x.png" alt="">
 			</figure>
 		</section>
-		<!-- #calltoaction -->
+		<!-- #call to action -->
 		
+		<!-- #standard page content -->
 		<?php
-
 		while ( have_posts() ) {
 			the_post();
 
-			get_template_part( 'template-parts/content/entry', get_post_type() );
-		}
-
-		// get_template_part( 'template-parts/content/pagination' );
+			get_template_part( 'template-parts/content/entry_content', get_post_type() );		}
 		?>
+		<!-- #standard page content -->
 
 		<!-- #services -->
 		<section class="services">
+			<div class="entry-content">
 				<h2>Your IT Environment, Synchronized</h2>
 				<p>Velox Systems has a wide variety of tools to create a secure business environment, tailored to your specific needs. These tools combined with our experience will provide a cohesive working experience for you and your team. </p>
+			</div>
+				
 				<div class="container">
 					<div class="service"></div>
 					<div class="service"></div>
@@ -60,7 +61,7 @@ if ( is_home() ) {
 		<!-- #services -->
 		
 		<!-- #video -->
-		<section>
+		<section class="entry-content">
 				<h2>The Velox Advantage</h2>
 				<p>Competitive markets require every advantage available to you with managed IT services, your business can outpace your competitors. Take advantage of the IT services that Velox Systems offers to put you ahead of the competition.</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/aIUQ7DsOCg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
