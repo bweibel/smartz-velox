@@ -571,6 +571,8 @@ select {
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	background-color: var(--color-theme-darkblue);
+	color: var(--color-theme-white);
 }
 
 .site-info {

@@ -26,6 +26,8 @@ h6 {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	clear: both;
+	color: var(--color-theme-secondary);
+	text-transform: capitalize;
 }
 
 .entry-header h1.entry-title,
