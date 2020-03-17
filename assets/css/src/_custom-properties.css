@@ -6,11 +6,11 @@
  **/
 
 :root {
-	--global-font-color: #333;
-	--global-font-family: "Crimson Text", serif;
-	--global-font-size: 20;
-	--global-font-line-height: 1.4;
-	--highlight-font-family: "Roboto Condensed", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--global-font-color: #1C1C1C;
+	--global-font-family: "Open Sans", sans-serif;
+	--global-font-size: 14;
+	--global-font-line-height: 1.8;
+	--highlight-font-family: "Montserrat", "Helvetica Neue", "Arial Narrow", sans-serif;
 	--content-width: 45rem;
 	--dropdown-symbol-width: 0.7em;
 
