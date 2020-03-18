@@ -176,6 +176,20 @@
 	padding: 0;
 }
 
+/* generic content wraps */
+.wrap,
+.wrap-large{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wrap {
+	max-width: var(--content-width);
+}
+.wrap-large {
+	max-width: var(--content-width-large);
+}
+
 /*--------------------------------------------------------------
 ## Custom block colors.
 --------------------------------------------------------------*/
