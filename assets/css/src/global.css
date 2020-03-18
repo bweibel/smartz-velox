@@ -72,7 +72,7 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	margin: 0 auto;
+	margin: 0 auto 0; /* 70px to compensate for fixed header */
 	max-width: 100%;
 }
 
@@ -199,7 +199,17 @@ select {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding-bottom: 1em;
+	display: flex;
+	position: sticky;
+	
+	width: 100%;
+	top: 0px;
+	background: var(--color-theme-white);
+	box-shadow: 0 0 6px var(--color-shadow);
+}
+
+.admin-bar .site-header {
+	top: 32px;
 }
 
 .header-image {
@@ -213,12 +223,12 @@ select {
 
 .custom-logo-link {
 	display: inline-block;
-	margin: 0 auto 1em;
+	margin: 0 auto;
 }
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	padding: 8px 1em 0;
 }
 
 .site-title {
@@ -386,8 +396,7 @@ select {
 	margin: 0 auto 2em;
 	padding: 0 1em;
 	max-width: var(--content-width);
-	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
+	font-family: var(--global-font-family);
 }
 
 .main-navigation a {
@@ -395,7 +404,10 @@ select {
 	width: 100%;
 	padding: 0.5em 1em 0.5em 0;
 	text-decoration: none;
-	color: #000;
+	text-transform: uppercase;
+	color: var(--color-theme-blue);
+	font-weight: 700;
+	font-size: 16px;
 }
 
 .main-navigation a:hover,
