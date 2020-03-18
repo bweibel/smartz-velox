@@ -22,7 +22,7 @@ if ( is_home() ) {
 	<main id="primary" class="site-main">
 
 		<!-- #call to action -->
-		<section class="call-to-action">
+		<section class="call-to-action fancy-background">
 				<h2>Work better.<br>Play more.</h2>
 				<h3>I.T. support you can trust</h3>
 				<p>We help you work better by providing integrated systems management and strategic forecasting to keep your time at work focused on, well, work! When you leave for the day, you can leave knowing your environment and data are secure and ready for your return. Who knew work-life-balance could be so sustainable?</p>

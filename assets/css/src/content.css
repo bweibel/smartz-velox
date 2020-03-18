@@ -69,7 +69,7 @@
 }
 
 .page-header,
-.entry-header,
+/* .entry-header, */
 .entry-footer,
 .site-info,
 .post-navigation,
@@ -81,13 +81,19 @@
 	max-width: var(--content-width);
 }
 
+.entry-header {
+	padding: 1em;
+	margin-top: 0;
+	text-align: center;
+}
+
 @media (--content-query) {
 
 	.page-content > *,
 	.entry-content > *,
 	.entry-summary > *,
 	.page-header,
-	.entry-header,
+	/* .entry-header, */
 	.entry-footer,
 	.site-info,
 	.post-navigation,

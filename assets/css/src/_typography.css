@@ -36,6 +36,10 @@ h6 {
 	line-height: 1.4;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	color: var(--color-theme-white);
+	text-shadow: var(--special-text-shadow);
+	position: relative;
+	z-index: 5;
 }
 
 dfn,
