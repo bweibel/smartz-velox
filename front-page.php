@@ -50,45 +50,68 @@ if ( is_home() ) {
 
 		<!-- #services -->
 		<section class="services">
-			<div class="entry-content">
+			<div class="wrap">
 				<h2>Your IT Environment, Synchronized</h2>
 				<p>Velox Systems has a wide variety of tools to create a secure business environment, tailored to your specific needs. These tools combined with our experience will provide a cohesive working experience for you and your team. </p>
 			</div>
 				
 				<div class="container wrap-large">
 					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
+					</div>
+					<div class="service">
 						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
 					</div>
-					<div class="service"></div>
-					<div class="service"></div>
-					<div class="service"></div>
-					<div class="service"></div>
-					<div class="service"></div>
+					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+					</div>
+					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+					</div>
+					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+					</div>
+					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+					</div>
 				</div>
 		</section>
 		<!-- #services -->
 		
 		<!-- #video -->
-		<section class="entry-content">
+		<section class="wrap">
 				<h2>The Velox Advantage</h2>
 				<p>Competitive markets require every advantage available to you with managed IT services, your business can outpace your competitors. Take advantage of the IT services that Velox Systems offers to put you ahead of the competition.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/aIUQ7DsOCg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div>
+					<iframe width="100%" src="https://www.youtube.com/embed/aIUQ7DsOCg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 				<a href="#" class="button">Meet the Team</a>
 		</section>
 		<!-- #video -->
 		<!-- #testimonials -->
-		<section>
+		<section class="wrap">
 				<h2>What Our Customers Are Saying</h2>
-
+				<p>Velox Systems offers a wide variety of business IT services. No matter what your business needs, Velox Systems possesses the tools and experience to meet them. These services include:</p>
 		</section>
 		<!-- #testimonials -->
 		
 		<!-- #testimonials -->
-		<section class="blog">
+		<section class="blog wrap">
 				<h2>Latest News</h2>
-
+						[Blog Element]
 		</section>
     <!-- #testimonials -->
 

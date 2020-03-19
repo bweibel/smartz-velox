@@ -628,10 +628,14 @@ were hidden (via .neverending) before. */
 /*--------------------------------------------------------------
 # Custom Elements
 --------------------------------------------------------------*/
-/* Call to Action */
+/* 
+	Call to Action 
+	--------------------------------------------------------------
+*/
 .call-to-action .wrap {
 	display: grid;
 	grid-template-columns: 1fr;
+	margin-top: 0;
 }
 
 .call-to-action .pitch {
@@ -682,7 +686,10 @@ were hidden (via .neverending) before. */
 	}
 }
 
-/* Services */
+/* 
+	Services 
+	--------------------------------------------------------------
+*/
 .services h2 {
 	font-size: 26px;
 	text-align: center;
@@ -721,6 +728,9 @@ were hidden (via .neverending) before. */
 	height: 80vw;
 	max-height: 20em;
 	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .service .icon,
@@ -728,25 +738,36 @@ were hidden (via .neverending) before. */
 	margin: auto;
 }
 
-.service .icon {
-	margin-top: 1em;
+.service .icon-service {
+	max-width: 4em;
+	margin: 1em auto;
 }
 
 .service .title {
 	color: var(--color-theme-white);
-	margin-top: 1em;
+	margin: 1em auto;
+}
+
+.service .icon-arrow {
+	background-image: url("../images/Velox-Website-Icon-Arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 1.6em;
+	height: 2em;
+	width: 2em;
+	margin: auto;
+	position: relative;
 }
 
 .service .service-link {
-	display: block;
-	width: 4em;
-	padding: 1em;
-	border: 2px solid white;
-	border-radius: 50%;
-	position: relative;
-	bottom: 1em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-
 /*--------------------------------------------------------------
 # Extras
 --------------------------------------------------------------*/
