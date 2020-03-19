@@ -74,11 +74,17 @@
 .site-info,
 .post-navigation,
 .page-navigation,
-.comments-area {
+.comments-area,
+.wrap,
+.wrap-large {
 	margin: 1.5em auto;
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	max-width: var(--content-width);
+}
+
+.wrap-large {
+	max-width: var(--content-width-large);
 }
 
 .entry-header {
@@ -88,7 +94,6 @@
 }
 
 @media (--content-query) {
-
 	.page-content > *,
 	.entry-content > *,
 	.entry-summary > *,
@@ -98,9 +103,14 @@
 	.site-info,
 	.post-navigation,
 	.page-navigation,
-	.comments-area {
+	.comments-area,
+	.wrap {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.wrap-large {
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 	}
 }
 
@@ -174,20 +184,6 @@
 .alignfull {
 	max-width: 100%;
 	padding: 0;
-}
-
-/* generic content wraps */
-.wrap,
-.wrap-large{
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.wrap {
-	max-width: var(--content-width);
-}
-.wrap-large {
-	max-width: var(--content-width-large);
 }
 
 /*--------------------------------------------------------------

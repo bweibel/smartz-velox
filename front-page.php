@@ -56,7 +56,9 @@ if ( is_home() ) {
 			</div>
 				
 				<div class="container">
-					<div class="service"></div>
+					<div class="service">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="">
+					</div>
 					<div class="service"></div>
 					<div class="service"></div>
 					<div class="service"></div>

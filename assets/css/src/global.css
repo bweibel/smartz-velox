@@ -629,10 +629,6 @@ were hidden (via .neverending) before. */
 # Custom Elements
 --------------------------------------------------------------*/
 /* Call to Action */
-.call-to-action{
-	padding: 2em;
-}
-
 .call-to-action .wrap {
 	display: grid;
 	grid-template-columns: 1fr;
