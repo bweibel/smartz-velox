@@ -670,8 +670,7 @@ were hidden (via .neverending) before. */
 }
 
 .call-to-action .button{
-margin: 0 auto;
-
+	margin: 20px auto;
 }
 
 @media (--wide-window) {
@@ -681,14 +680,11 @@ margin: 0 auto;
 	}
 
 	.call-to-action figure{
-		display: flex;
 		align-items: center;
+		display: flex;
 		justify-content: center;
 	}
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Extras
