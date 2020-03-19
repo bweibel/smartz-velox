@@ -33,7 +33,7 @@ if ( is_home() ) {
 					<a href="#" class="button button--big">Let's Figure it Out Together</a>
 				</section>
 				<figure>
-					<img src="wp-content/themes/velox-dev/assets/images/Velox-Caricatures-Jordan@2x.png" alt="">
+					<img src="wp-content/themes/velox-dev/assets/images/Velox-Caricatures-Jordan@2x.png" alt="Caricature" role="presentation">
 				</figure>
 			</div>
 		</section>
@@ -55,9 +55,11 @@ if ( is_home() ) {
 				<p>Velox Systems has a wide variety of tools to create a secure business environment, tailored to your specific needs. These tools combined with our experience will provide a cohesive working experience for you and your team. </p>
 			</div>
 				
-				<div class="container">
+				<div class="container wrap-large">
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
 					</div>
 					<div class="service"></div>
 					<div class="service"></div>

@@ -682,6 +682,71 @@ were hidden (via .neverending) before. */
 	}
 }
 
+/* Services */
+.services h2 {
+	font-size: 26px;
+	text-align: center;
+}
+
+@media (--wide-window) {
+
+}
+
+.services .container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	padding: 1em 1.5em;
+	overflow: auto;
+}
+
+@media (--wide-window) {
+	.services h2{
+		text-align: center;
+	}
+
+	.services .container{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0;
+	}
+}
+
+.service { 
+	background-color: var(--color-theme-darkblue);
+	border-radius: 23px;
+	padding: 1em;
+	margin: 1em;
+	width: 80vw;
+	max-width: 20em;
+	height: 80vw;
+	max-height: 20em;
+	text-align: center;
+}
+
+.service .icon,
+.service .service-link {
+	margin: auto;
+}
+
+.service .icon {
+	margin-top: 1em;
+}
+
+.service .title {
+	color: var(--color-theme-white);
+	margin-top: 1em;
+}
+
+.service .service-link {
+	display: block;
+	width: 4em;
+	padding: 1em;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1em;
+}
+
 /*--------------------------------------------------------------
 # Extras
 --------------------------------------------------------------*/
