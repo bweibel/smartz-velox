@@ -638,10 +638,17 @@ were hidden (via .neverending) before. */
 	grid-template-columns: 1fr;
 }
 
+.call-to-action .pitch {
+	text-align: center;
+}
+
+.call-to-action .pitch p{
+	text-align: left;
+}
+
 .call-to-action .title{
 	font-size: 40px;	
 	font-weight: 900;
-	text-align: center;
 	letter-spacing: -1px;
 	line-height: 48px;
 	margin: 10px;
@@ -650,7 +657,6 @@ were hidden (via .neverending) before. */
 .call-to-action .subtitle{
 	font-family: var(--global-font-family);
 	font-size: 18px;
-	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -661,6 +667,24 @@ were hidden (via .neverending) before. */
 
 .call-to-action figure{
 	display: none;
+}
+
+.call-to-action .button{
+margin: 0 auto;
+
+}
+
+@media (--wide-window) {
+
+	.call-to-action .wrap {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.call-to-action figure{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 
@@ -674,7 +698,7 @@ were hidden (via .neverending) before. */
 	position: relative;
 	background-color: var(--color-theme-blue);
 	background-image: var(--background-theme-gradient);
-	z-index: -1;
+	z-index: 0;
 }
 
 .fancy-background h1,
@@ -687,7 +711,11 @@ were hidden (via .neverending) before. */
 	color: var(--color-theme-white);
 	text-shadow: var(--special-text-shadow);
 	position: relative;
-	z-index: 5;
+}
+
+.fancy-background > * {
+	position: relative;
+	z-index: 1;
 }
 
 .fancy-background:after{
