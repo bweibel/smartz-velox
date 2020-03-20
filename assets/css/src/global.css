@@ -671,6 +671,7 @@ were hidden (via .neverending) before. */
 
 .call-to-action .button{
 	margin: 20px auto;
+	grid-column: 1/3;
 }
 
 @media (--wide-window) {
@@ -806,6 +807,24 @@ were hidden (via .neverending) before. */
 	right: 0;
 	z-index: 1;
 }
+
+/* 
+	Video Element 
+	--------------------------------------------------------------
+*/
+.video-element {
+	text-align: center;
+	background-color: var(--color-theme-blue);
+
+}
+
+.video-element h2,
+.video-element p {
+	color: var(--color-theme-white);
+	text-shadow: var(--special-text-shadow);
+}
+
+
 /*--------------------------------------------------------------
 # Extras
 --------------------------------------------------------------*/
