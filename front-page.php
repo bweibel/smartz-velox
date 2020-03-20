@@ -112,7 +112,7 @@ if ( is_home() ) {
 		<!-- #testimonials -->
 		<section class="testimonials wrap">
 				<h1>What Our Customers Are Saying</h1>
-				<p>Velox Systems offers a wide variety of business IT services. No matter what your business needs, Velox Systems possesses the tools and experience to meet them. These services include:</p>
+				[Testimonial]
 		</section>
 		<!-- #testimonials -->
 		

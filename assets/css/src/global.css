@@ -408,7 +408,7 @@ select {
 .main-navigation {
 	clear: both;
 	display: block;
-	margin: 0 auto 2em;
+	margin: 0 auto 0;
 	padding: 0 1em;
 	max-width: var(--content-width);
 	font-family: var(--global-font-family);
@@ -425,7 +425,10 @@ select {
 	font-size: 16px;
 }
 
-.main-navigation a:hover,
+.main-navigation a:hover{
+	filter: brightness(0.8);
+}
+
 .main-navigation a:focus {
 	text-decoration: underline;
 }
@@ -444,7 +447,7 @@ select {
 @media (--wide-menu-query) {
 
 	.main-navigation ul li a {
-		padding: 0.4em 0.5em;
+		padding: 1.2em 0.5em;
 	}
 
 	.main-navigation ul li {
@@ -782,7 +785,7 @@ were hidden (via .neverending) before. */
 }
 
 .service .icon-arrow {
-	background-image: url("../images/Velox-Website-Icon-Arrow.svg");
+	background-image: url("./assets/images/Velox-Website-Icon-Arrow.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 2px solid white;
@@ -924,7 +927,7 @@ were hidden (via .neverending) before. */
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/src/Velox-Website-BG_Pattern@2x.png);
+	background-image: url(./assets/images/src/Velox-Website-BG_Pattern@2x.png);
 	background-attachment: fixed;
 	opacity: 0.1;
 }
