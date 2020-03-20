@@ -56,6 +56,12 @@ if ( is_home() ) {
 			</div>
 				
 				<div class="container wrap-large">
+					<div class="service" data-image-src="wp-content/uploads/2020/03/VeloxBranding-6-720x480.jpg">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<h3 class="title ">IT Cost Engineering</h3>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
+					</div>
 					<div class="service">
 						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
@@ -63,29 +69,28 @@ if ( is_home() ) {
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
-						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
-						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
-						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
+						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
-						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
-					</div>
-					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon">
-						<h3 class="title ">IT Cost Engineering</h3>
-						<a href="#" class="service-link"><img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Arrow.svg" alt="Arrow"></a>
+						<div class="icon-arrow"></div>
+						<a href="#" class="service-link"></a>
 					</div>
 				</div>
 		</section>
