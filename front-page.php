@@ -22,7 +22,7 @@ if ( is_home() ) {
 	<main id="primary" class="site-main">
 
 		<!-- #call to action -->
-		<section class="call-to-action fancy-background">
+		<section class="call-to-action fancy-background sloped">
 			<div class="wrap wrap-large">
 				<section class="pitch">
 					<h2 class="title">Work better.<br>Play more.</h2>
@@ -49,7 +49,7 @@ if ( is_home() ) {
 		<!-- #standard page content -->
 
 		<!-- #services -->
-		<section class="services">
+		<section class="services sloped">
 			<div class="wrap">
 				<h2>Your IT Environment, Synchronized</h2>
 				<p>Velox Systems has a wide variety of tools to create a secure business environment, tailored to your specific needs. These tools combined with our experience will provide a cohesive working experience for you and your team. </p>
@@ -97,11 +97,11 @@ if ( is_home() ) {
 		<!-- #services -->
 		
 		<!-- #video -->
-		<section class="video-element">
+		<section class="video-element sloped-top">
 			<div class="wrap">
 				<h2>The Velox Advantage</h2>
 				<p>Competitive markets require every advantage available to you with managed IT services, your business can outpace your competitors. Take advantage of the IT services that Velox Systems offers to put you ahead of the competition.</p>
-				<div>
+				<div class="video-container">
 					<iframe width="100%" src="https://www.youtube.com/embed/aIUQ7DsOCg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<a href="#" class="button">Meet the Team</a>
