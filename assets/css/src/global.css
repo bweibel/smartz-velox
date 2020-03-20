@@ -594,7 +594,7 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
+	margin: 0;
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
@@ -691,17 +691,17 @@ were hidden (via .neverending) before. */
 	Services 
 	--------------------------------------------------------------
 */
-.services h2 {
-	font-size: 26px;
+.services h1 {
 	text-align: center;
-	line-height: 38px;
 }
 
 @media (--wide-window) {
-
+	.services h1 {
+		text-align: left;
+	}
 }
 
-.services .container{
+.services .container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	padding: 1em 1.5em;
@@ -813,23 +813,19 @@ were hidden (via .neverending) before. */
 	Video Element 
 	--------------------------------------------------------------
 */
-.video-element h2 {
-	font-size: 26px;
+.services h1 {
 	text-align: center;
-	line-height: 38px;
+}
+
+@media (--wide-window) {
+	.services h1 {
+		text-align: left;
+	}
 }
 
 .video-element {
 	padding-bottom: 1.5em;
 	text-align: center;
-	background-color: var(--color-theme-blue);
-	background-image: linear-gradient(28deg, var(--color-theme-atlblue) 0%,var(--color-theme-blue) 100%);
-}
-
-.video-element h2,
-.video-element p {
-	color: var(--color-theme-white);
-	text-shadow: var(--special-text-shadow);
 }
 
 .video-container {
@@ -838,7 +834,7 @@ were hidden (via .neverending) before. */
 	padding-top: 30px; height: 0; overflow: hidden;
 	margin-bottom: 1.5rem;
 }
-	 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -858,6 +854,37 @@ were hidden (via .neverending) before. */
 	.video-element .button{
 		display: inline-block;
 	}	
+}
+
+/* 
+	Testimonials Element 
+	--------------------------------------------------------------
+*/
+.testimonials h1 {
+	text-align: center;
+}
+
+@media (--wide-window) {
+	.testimonials h1 {
+		text-align: left;
+	}
+}
+
+/* 
+	Blog Element 
+	--------------------------------------------------------------
+*/
+.blog {
+	padding: 1.5em 0;
+}
+.blog h1 {
+	text-align: center;
+}
+
+@media (--wide-window) {
+	.blog h1 {
+		text-align: left;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -888,7 +915,7 @@ were hidden (via .neverending) before. */
 	z-index: 1;
 }
 
-.fancy-background:after{
+.fancy-background:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -905,6 +932,27 @@ were hidden (via .neverending) before. */
 .entry-header.fancy-background:after{
 	background-size: 50%;
 }
+
+.blue-background {
+	background-color: var(--color-theme-blue);
+	background-image: linear-gradient(28deg, var(--color-theme-atlblue) 0%,var(--color-theme-blue) 100%);
+}
+
+.blue-background h1,
+.blue-background h2,
+.blue-background h3,
+.blue-background h4,
+.blue-background h5,
+.blue-background h6,
+.blue-background p {
+	color: var(--color-theme-white);
+	text-shadow: var(--special-text-shadow);
+	position: relative;
+}
+
+/* 
+	Sloped containers
+*/
 
 .sloped {
 	clip-path: polygon(0 0,100% 0,100% calc(100% - 6vw),0 100%);
