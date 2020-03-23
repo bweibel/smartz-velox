@@ -39,18 +39,9 @@ if ( is_home() ) {
 		<!-- #services -->
 		
 		<!-- #video -->
-		<section class="video-element sloped-top blue-background">
-			<div class="wrap">
-				<h1>The Velox Advantage</h1>
-				<p>Competitive markets require every advantage available to you with managed IT services, your business can outpace your competitors. Take advantage of the IT services that Velox Systems offers to put you ahead of the competition.</p>
-				<div class="video-container">
-					<iframe width="100%" src="https://www.youtube.com/embed/aIUQ7DsOCg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				<a href="#" class="button">Meet the Team</a>
-			</div>
-				
-		</section>
+		<?php get_template_part( 'template-parts/content/video_element' ); ?>
 		<!-- #video -->
+
 		<!-- #testimonials -->
 		<section class="testimonials wrap">
 				<h1>What Our Customers Are Saying</h1>
