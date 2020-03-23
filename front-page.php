@@ -39,6 +39,10 @@ if ( is_home() ) {
 		<!-- #services -->
 		
 		<!-- #video -->
+		<?php get_template_part( 'template-parts/content/chat_bubble' ); ?>
+		<!-- #video -->
+
+		<!-- #video -->
 		<?php get_template_part( 'template-parts/content/video_element' ); ?>
 		<!-- #video -->
 

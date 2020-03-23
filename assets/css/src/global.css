@@ -758,7 +758,7 @@ were hidden (via .neverending) before. */
 	z-index: 1;
 }
 
-.service::after {
+.service .background {
   content: "";
   position: absolute;
 	top: 0; 
@@ -767,16 +767,17 @@ were hidden (via .neverending) before. */
 	right: 0;
 	width: 100%; 
 	height: 100%;
-	background-image: url(/wp-content/uploads/2020/03/VeloxBranding-6-720x480.jpg);
+	background-image: url(../images/VeloxBranding-24.jpg);
 	background-size: cover;
 	background-position: center center;
 	filter: grayscale(100%);
 	opacity: 0.2;
 	border-radius: 23px;
 	transition: all 0.5s ease-out;
+	z-index: 0;
 }
 
-.service:hover::after {
+.service:hover .background {
 	width: 120%; 
 	height: 120%;
 	left: -10%;
@@ -940,6 +941,90 @@ were hidden (via .neverending) before. */
 	.featured-post .entry-summary {
 		display: block;
 		margin-top: 0;
+	}
+}
+
+.chat-cta{
+	margin: 1.5em;
+	display: flex;
+}
+
+.chat-cta .bubble {
+	border-radius: 10px;
+	padding: 0 1em;
+	background-color: var(--color-theme-blue);
+	color: var(--color-theme-white);
+	text-shadow: var(--special-text-shadow);
+	max-width: 70%;
+	font-size: 16px;
+	margin-right: 5%;
+	position: relative;
+}
+
+.chat-cta .bubble::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: .7em solid transparent;
+	border-bottom: .7em solid transparent;
+	border-left: 2em solid var(--color-theme-blue);
+	display: block;
+	position: absolute;
+	right: -2em;
+	bottom: 35%;
+}
+
+.chat-cta .button {
+	display: none;
+}
+
+.chat-cta .face {
+	background-image: url(../images/Velox-Website-Mobile-FAB@2x.png);
+	background-repeat: no-repeat;
+	width: 10em;
+}
+
+@media (--wide-window) {
+	.chat-cta{
+		position: fixed;
+		bottom: 1em;
+		right: 1em;
+		z-index: 1;
+	} 
+
+	.chat-cta {
+		background-color: var(--color-theme-white);
+		border-radius: 10px;
+		box-shadow: var(--special-box-shadow);
+	}
+
+	.chat-cta .bubble {
+		background: none;
+		color: var(--color-theme-darkblue);
+		text-shadow: none;
+		margin-bottom: 1em;
+		text-align: center;
+		max-width: 20em;
+		margin: 0;
+		font-size: 15px;
+		padding-right: 0;
+	}
+
+	.chat-cta .face {
+		width: 6em;
+		background-position: center;
+	}
+
+	.chat-cta .bubble::after {
+		border: none;
+	}
+
+
+	.chat-cta .button {
+		display: inline-block;
+		margin-bottom: 1em;
+		background-color: var(--color-theme-blue);
+		font-size: 12px;
 	}
 }
 
