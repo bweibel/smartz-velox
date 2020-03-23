@@ -608,7 +608,7 @@ select {
 	padding: 2em 0;
 }
 
-.site-footer {
+.site-footer.sloped {
 	padding: 100px 0 2em 0 ;
 	margin-top: -60px;
 }
