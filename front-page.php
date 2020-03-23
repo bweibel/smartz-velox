@@ -9,6 +9,8 @@
 
 namespace WP_Rig\WP_Rig;
 
+$theme = get_template_directory_uri();
+
 get_header();
 
 // Use grid layout if blog index is displayed.
@@ -32,7 +34,7 @@ if ( is_home() ) {
 					<p>Not sure where to go?</p>
 				</section>
 				<figure>
-					<img src="wp-content/themes/velox-dev/assets/images/Velox-Caricatures-Jordan@2x.png" alt="Caricature" role="presentation">
+					<img src=<?php printf($theme . "/assets/images/Velox-Caricatures-Jordan@2x.png")?> alt="Caricature" role="presentation">
 				</figure>
 				<a href="#" class="button button--big">Let's Figure it Out Together</a>
 			</div>
@@ -57,37 +59,37 @@ if ( is_home() ) {
 				
 				<div class="container wrap-large">
 					<div class="service" data-image-src="wp-content/uploads/2020/03/VeloxBranding-6-720x480.jpg">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
 					</div>
 					<div class="service">
-						<img src="wp-content/themes/velox-dev/assets/images/Velox-Website-Icon-Cloud.svg" alt="Cloud Icon" class="icon-service">
+						<img src=<?php printf( $theme . "/assets/images/Velox-Website-Icon-Cloud.svg") ?> alt="Cloud Icon" class="icon-service">
 						<h3 class="title ">IT Cost Engineering</h3>
 						<div class="icon-arrow"></div>
 						<a href="#" class="service-link"></a>
@@ -112,11 +114,11 @@ if ( is_home() ) {
 		<!-- #testimonials -->
 		<section class="testimonials wrap">
 				<h1>What Our Customers Are Saying</h1>
-				[Testimonial]
+				<div id="popup-rating-widget"><script id="popup-rating-widget-script" src="https://widget.reviewability.com/js/popupWidget.min.js" data-gfspw="https://smartsolutions.reviewability.com/popup-pixel/get/83bf6561ba40f7e1c11c1c47c0b4bb4b6982726c?clientId=103501" async></script></div>
 		</section>
 		<!-- #testimonials -->
 		
-		<!-- #testimonials -->
+		<!-- #Blog -->
 		<section class="blog fancy-background">
 			<div class="wrap">
 				<h1>Latest News</h1>
@@ -124,7 +126,7 @@ if ( is_home() ) {
 					</div>
 				
 		</section>
-    <!-- #testimonials -->
+    <!-- #Blog -->
 
 
 	</main><!-- #primary -->
