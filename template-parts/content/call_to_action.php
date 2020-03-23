@@ -9,7 +9,6 @@ namespace WP_Rig\WP_Rig;
 
 $theme = get_template_directory_uri();
 ?>
-<!-- #call to action -->
 <section class="call-to-action fancy-background sloped">
   <div class="wrap wrap-large">
     <section class="pitch">
@@ -25,4 +24,3 @@ $theme = get_template_directory_uri();
     <a href="#" class="button button--big">Let's Figure it Out Together</a>
   </div>
 </section>
-<!-- #call to action -->
