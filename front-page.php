@@ -50,13 +50,7 @@ if ( is_home() ) {
 		<!-- #testimonials -->
 		
 		<!-- #Featured Post -->
-		<section class="featured-post fancy-background">
-			<div class="wrap">
-				<h1>Latest News</h1>
-				[Blog Element]
-					</div>
-				
-		</section>
+		<?php get_template_part( 'template-parts/content/featured_post' ); ?>
     <!-- #Featured Post -->
 
 
