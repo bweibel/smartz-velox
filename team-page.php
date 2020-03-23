@@ -23,6 +23,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			the_post();
 
 			get_template_part( 'template-parts/content/entry', 'page' );
+			
+			get_template_part('template-parts/content/team_list');
 		}
 		?>
 	</main><!-- #primary -->
