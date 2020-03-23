@@ -15,7 +15,7 @@ use WP_Query;
  
 			<?php if ( $the_query->have_posts() ) : ?>
   
-      <section class="featured-post fancy-background">
+      <section class="featured-post fancy-background sloped">
         <div class="wrap">
           <h1>Latest News</h1>
         
