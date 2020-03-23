@@ -23,5 +23,8 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
   <?php the_title('<h3 class="title">', '</h3>') ?>
   <!-- <?php the_content( ); ?> -->
   <div class="icon-arrow"></div>
-  <a href="#" class="service-link"></a>
+  <a href="<?php the_permalink() ?>" class="service-link"></a>
+  <?php if( !empty( $background ) ): ?>
+    <div class="background" style="background-image: url(<?php echo esc_url($background['url']); ?>)"></div>
+  <?php endif; ?>
 </div>
