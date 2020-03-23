@@ -21,7 +21,7 @@ if ( is_home() ) {
 ?>
 	<main id="primary" class="site-main">
 
-		<!-- #call to action -->
+	<!-- #call to action -->
 		<?php get_template_part( 'template-parts/content/call_to_action' ); ?>
 		<!-- #call to action -->
 		

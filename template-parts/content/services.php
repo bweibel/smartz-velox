@@ -11,8 +11,8 @@ $theme = get_template_directory_uri();
 ?>
 <section class="services sloped">
 			<div class="wrap">
-				<h1>Your IT Environment, Synchronized</h1>
-				<p>Velox Systems has a wide variety of tools to create a secure business environment, tailored to your specific needs. These tools combined with our experience will provide a cohesive working experience for you and your team. </p>
+				<h1><?php the_field( "services_title" ); ?></h1>
+				<?php the_field( "services_copy" ); ?>
 			</div>
 				
 				<div class="container wrap-large">

@@ -10,15 +10,14 @@ namespace WP_Rig\WP_Rig;
 use WP_Query;
 ?>
 		<?php 
-			$args = array( 'category_name' => 'Featured' );
+			$args = array( 'cat' => get_field( "featured_post_category" ), 'posts_per_page' => 1 );
 			$the_query = new WP_Query( $args ); ?>
  
 			<?php if ( $the_query->have_posts() ) : ?>
-  
       <section class="featured-post fancy-background sloped">
         <div class="wrap">
-          <h1>Latest News</h1>
-        
+          <h1><?php the_field( "featured_post_title" ); ?></h1>
+          <?php the_field( "featured_post_copy" ); ?>
       <!-- the loop -->
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <article>
