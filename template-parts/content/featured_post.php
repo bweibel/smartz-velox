@@ -6,8 +6,8 @@
  */
 
 namespace WP_Rig\WP_Rig;
-
 use WP_Query;
+
 ?>
 		<?php 
 			$args = array( 'cat' => get_field( "featured_post_category" ), 'posts_per_page' => 1 );
