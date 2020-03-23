@@ -272,6 +272,15 @@ select {
 	color: #757575;
 }
 
+.phone {
+	color: var(--color-theme-darkblue);
+	font-weight: 700;
+	text-decoration: none;
+	padding: 1rem;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+
 /*--------------------------------------------------------------
 ## Basic navigation menus - handles submenu and small screen toggle
 --------------------------------------------------------------*/
@@ -442,6 +451,10 @@ select {
 }
 
 @media (--wide-menu-query) {
+
+	.main-navigation {
+		margin: 0 0 0 auto;
+	}
 
 	.main-navigation ul li a {
 		padding: 1.2em 0.5em .9em;
@@ -725,9 +738,10 @@ were hidden (via .neverending) before. */
 	}
 
 	.services .container{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		padding: 0;
+		display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 	}
 }
 
