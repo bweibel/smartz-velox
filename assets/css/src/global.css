@@ -713,7 +713,7 @@ were hidden (via .neverending) before. */
 
 @media (--wide-window) {
 	.services h1 {
-		text-align: left;
+		/* text-align: left; */
 	}
 }
 
@@ -831,13 +831,13 @@ were hidden (via .neverending) before. */
 	Video Element 
 	--------------------------------------------------------------
 */
-.services h1 {
+.video-element h1 {
 	text-align: center;
 }
 
 @media (--wide-window) {
-	.services h1 {
-		text-align: left;
+	.video-element h1 {
+		/* text-align: left; */
 	}
 }
 
@@ -884,7 +884,7 @@ were hidden (via .neverending) before. */
 
 @media (--wide-window) {
 	.testimonials h1 {
-		text-align: left;
+		/* text-align: left; */
 	}
 }
 
@@ -944,9 +944,15 @@ were hidden (via .neverending) before. */
 	}
 }
 
+/* 
+	Chat Bubble
+	--------------------------------------------------------------
+*/
+
 .chat-cta{
-	margin: 1.5em;
+	margin: 1.5em 1em 4em;
 	display: flex;
+	justify-content: center;
 }
 
 .chat-cta .bubble {
@@ -981,7 +987,7 @@ were hidden (via .neverending) before. */
 .chat-cta .face {
 	background-image: url(../images/Velox-Website-Mobile-FAB@2x.png);
 	background-repeat: no-repeat;
-	width: 10em;
+	width: 6em;
 }
 
 @media (--wide-window) {
@@ -1096,12 +1102,12 @@ were hidden (via .neverending) before. */
 */
 
 .sloped {
-	clip-path: polygon(0 0,100% 0,100% calc(100% - 6vw),0 100%);
-	padding-bottom: 6vw;
+	clip-path: polygon(0 0,100% 0,100% calc(100% - 8vw),0 100%);
+	padding-bottom: 10vw;
 }
 
 .sloped-top {
-	clip-path: polygon(0px 6vw, 100% 0px, 100% 100%, 0px 100%);
-	padding-top: 6vw;
+	clip-path: polygon(0px 8vw, 100% 0px, 100% 100%, 0px 100%);
+	padding-top: 10vw;
 }
 
