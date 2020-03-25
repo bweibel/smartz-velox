@@ -642,12 +642,43 @@ were hidden (via .neverending) before. */
 }
 
 /*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+.blog {
+
+}
+
+.blog .post .entry-title {
+	margin: 0;
+}
+
+.blog .post .entry-title a{
+	text-decoration: none;
+	color: var(--color-theme-white);
+}
+
+.blog .entry-meta,
+.blog .entry-meta a {
+	color: var(--color-theme-white);
+}
+
+.post .post-thumbnail {
+	margin-top: 1.5em;
+}
+/*--------------------------------------------------------------
 # Custom Elements
 --------------------------------------------------------------*/
+
+
 /* 
 	Call to Action 
 	--------------------------------------------------------------
 */
+.call-to-action {
+    padding-top: 3rem;
+
+}
+
 .call-to-action .wrap {
 	display: grid;
 	grid-template-columns: 1fr;
