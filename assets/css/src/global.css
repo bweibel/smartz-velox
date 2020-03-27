@@ -1066,20 +1066,11 @@ were hidden (via .neverending) before. */
 }
 
 /* 
-	Team Page
+	Team Element
 	--------------------------------------------------------------
 */
 .team-member {
 	margin: 1.5em auto;
-
-	/* display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-template-rows: auto; */
-}
-
-.team-member .team-name,
-.team-member .job-title {
-	/* grid-column: 1/3; */
 }
 
 @media (--wide-window) {
@@ -1087,6 +1078,38 @@ were hidden (via .neverending) before. */
 		float: left;
 		margin-right: 1em;
 	}
+}
+
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-list .team-card {
+	width: 30%;
+	min-width: 20em;
+	margin: auto;
+}
+
+.team-list .team-card .team-name,
+.team-member .team-name {
+	color: var(--color-theme-darkblue);
+	font-size: 32px;
+	margin-bottom: 0;
+}
+
+.team-list .team-card .job-title,
+.team-member .job-title {
+	margin-top: 0;
+}
+
+.team-card .team-name,
+.team-card .job-title{
+	text-align: center;
+}
+
+.team-card img {
+	border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
