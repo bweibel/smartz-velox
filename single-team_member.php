@@ -27,17 +27,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		<?php
 
 		while ( have_posts() ) {
-			printf('<article class="team-member wrap">');
-				the_post();
-				the_title('<h2 class="team-name">','</h2>');
-				the_field( "team_job_title" );
-				get_template_part( 'template-parts/content/entry_thumbnail', get_post_type() );
-				printf('<div class="team-description">');
-					the_content();
-					printf('</div>');
-			// get_template_part( 'template-parts/content/entry', get_post_type() );
-			printf('<a href="/team" class="button"><span class="dashicons dashicons-arrow-left"></span>Meet the Team</a>');
-			printf('</article>');
+			get_template_part('template-parts/team-member/team_member');
 		}
 		?>
 	</main><!-- #primary -->
