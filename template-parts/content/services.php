@@ -34,7 +34,6 @@ $the_query = new WP_Query( $args );
       <?php wp_reset_postdata(); ?>
 			</div>
 			<?php endif; ?>
-		
-
+	
 </section>
 
