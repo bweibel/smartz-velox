@@ -1065,6 +1065,30 @@ were hidden (via .neverending) before. */
 	}
 }
 
+/* 
+	Team Page
+	--------------------------------------------------------------
+*/
+.team-member {
+	margin: 1.5em auto;
+
+	/* display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-rows: auto; */
+}
+
+.team-member .team-name,
+.team-member .job-title {
+	/* grid-column: 1/3; */
+}
+
+@media (--wide-window) {
+	.team-member .post-thumbnail {
+		float: left;
+		margin-right: 1em;
+	}
+}
+
 /*--------------------------------------------------------------
 # Extras
 --------------------------------------------------------------*/
