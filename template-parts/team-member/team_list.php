@@ -12,12 +12,15 @@ $theme = get_template_directory_uri();
 
 
 $args = array( 
-	'post_type' => 'team_member',
+  'post_type' => 'team_member',
+  'orderby'     => 'title',
+  'order'     => 'ASC',
+  'posts_per_page' => -1
 );
 $the_query = new WP_Query( $args ); 
 
 ?>
-<section class="team-list wrap">
+<section class="team-list wrap-large">
 	
 	<?php if ( $the_query->have_posts() ) : ?>
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

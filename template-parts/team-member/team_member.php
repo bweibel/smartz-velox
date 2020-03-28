@@ -9,6 +9,7 @@ namespace WP_Rig\WP_Rig;
 
 $theme = get_template_directory_uri();
 $job_title = get_field('job_title');
+$team_link = 'meet-the-team';
 
 ?>
 
@@ -21,8 +22,7 @@ $job_title = get_field('job_title');
   <div class="team-description">
     <?php the_content(); ?>
   </div>
-  <a href="/team" class="button">
+  <a href="<?php printf($team_link) ?>" class="button">
     <span class="dashicons dashicons-arrow-left"></span>Meet the Team
   </a>
-
 </article>

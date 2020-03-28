@@ -1,5 +1,3 @@
-
-
 if ( 'loading' === document.readyState ) {
 	// The DOM has not yet been loaded.
 	document.addEventListener( 'DOMContentLoaded', init );
