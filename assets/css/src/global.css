@@ -245,6 +245,7 @@ select {
 .site-branding {
 	text-align: left;
 	padding: 8px 1em 0;
+	width: max-content;
 }
 
 
@@ -283,6 +284,8 @@ select {
 	padding: 1rem;
 	font-size: 1rem;
 	white-space: nowrap;
+	width: max-content;
+	justify-self: end;
 }
 
 /*--------------------------------------------------------------
