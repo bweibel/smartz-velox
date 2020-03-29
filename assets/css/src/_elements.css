@@ -22,8 +22,12 @@ html {
 
 /* stylelint-disable */
 body {
-	background: #fff;
+	background: var(--color-theme-darkblue);
 	/* Fallback for when there is no custom background color defined. */
+}
+
+.site {
+	background: var(--color-theme-white);
 }
 /* stylelint-enable */
 
