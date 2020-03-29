@@ -5,5 +5,7 @@
 .site {
 }
 
-
-
+@media (--narrow-menu-query) {
+  .nav--toggle-small .menu-toggle {
+  }
+}
