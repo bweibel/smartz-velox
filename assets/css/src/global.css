@@ -1011,7 +1011,8 @@ were hidden (via .neverending) before. */
 	bottom: 35%;
 }
 
-.chat-cta .button {
+.chat-cta .button,
+.chat-cta button {
 	display: none;
 }
 
@@ -1024,9 +1025,10 @@ were hidden (via .neverending) before. */
 @media (--wide-window) {
 	.chat-cta{
 		position: fixed;
-		bottom: 1em;
-		right: 1em;
+		bottom: 1rem;
+		right: 2rem;
 		z-index: 1;
+		margin: 0;
 	} 
 
 	.chat-cta {
@@ -1062,6 +1064,22 @@ were hidden (via .neverending) before. */
 		margin-bottom: 1em;
 		background-color: var(--color-theme-blue);
 		font-size: 12px;
+	}
+
+	.chat-cta button {
+		display: block;
+		position: absolute;
+		right: -1em;
+		font-weight: 700;
+		border-radius: 50%;
+		padding: 0;
+		height: 2em;
+		width: 2em;
+		top: -1em;
+	}
+
+	.chat-cta button:hover {
+		filter: brightness(.8);
 	}
 }
 
