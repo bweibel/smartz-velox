@@ -325,7 +325,7 @@ select {
 		right: 0;
 		top: 66px;
 		height: calc(100vh - 130px); /* fixed header + footer height: 130px */
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 
 	.nav--toggle-small.nav--toggled-on .menu-toggle {
