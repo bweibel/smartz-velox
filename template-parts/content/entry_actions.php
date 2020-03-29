@@ -12,7 +12,7 @@ namespace WP_Rig\WP_Rig;
 	<?php
 	if ( ! is_singular( get_post_type() ) && ! post_password_required() && post_type_supports( get_post_type(), 'comments' ) && comments_open() ) {
 		?>
-		<span class="comments-link">
+		<!-- <span class="comments-link">
 			<?php
 			comments_popup_link(
 				sprintf(
@@ -29,7 +29,7 @@ namespace WP_Rig\WP_Rig;
 				)
 			);
 			?>
-		</span>
+		</span> -->
 		<?php
 	}
 

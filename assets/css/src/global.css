@@ -648,6 +648,18 @@ were hidden (via .neverending) before. */
 
 }
 
+.blog .page-header {
+	background: var(--color-theme-darkblue);
+	margin: 0;
+	padding: 1rem;
+}
+
+.blog .page-title{
+	text-align: center;
+	margin: 0;
+	color: var(--color-theme-white);
+}
+
 .blog .post .entry-title {
 	margin: 0;
 }
