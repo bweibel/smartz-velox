@@ -1152,6 +1152,8 @@ were hidden (via .neverending) before. */
 	justify-content: center;
 }
 
+
+
 .chat-cta .bubble {
 	border-radius: 10px;
 	padding: 0 1em;
@@ -1195,12 +1197,15 @@ were hidden (via .neverending) before. */
 		right: 2rem;
 		z-index: 1;
 		margin: 0;
-	} 
-
-	.chat-cta {
 		background-color: var(--color-theme-white);
 		border-radius: 10px;
 		box-shadow: var(--special-box-shadow);
+		opacity: 1;
+		transition: opacity .5s;
+	}
+
+	.chat-cta.hidden {
+		opacity: 0;
 	}
 
 	.chat-cta .bubble {
