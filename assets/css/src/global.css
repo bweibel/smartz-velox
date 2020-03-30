@@ -1300,6 +1300,61 @@ were hidden (via .neverending) before. */
 	border-radius: 50%;
 }
 
+/* 
+	Custom Form Element
+	--------------------------------------------------------------
+*/
+.management-options,
+.security-options {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.management-options h3,
+.security-options h3 {
+	grid-column: span 2 ;
+	text-align: center;
+}
+
+.option-card {
+	max-width: 20em;
+	border: 1px solid var(--color-theme-grey);
+	border-radius: 4px;
+	transition: box-shadow .25s;
+	margin: auto;
+}
+
+.option-card:hover {
+	box-shadow: 0 0 10px var(--color-theme-darkblue);
+}
+
+.option-card.selected {
+	box-shadow: 0 0 20px var(--color-theme-blue);
+	border: 1px solid var(--color-theme-blue);
+}
+
+.option-card header,
+.option-card .description {
+	padding: 0.5em 1em;
+}
+
+.option-card header > * {
+	margin: 0;
+	text-align: center;
+}
+
+.option-card .option-title {
+	font-size: 18px;
+}
+
+.option-card .option-subtitle {
+	font-size: 14px;
+}
+
+.option-card .description {
+
+}
+
 /*--------------------------------------------------------------
 # Extras
 --------------------------------------------------------------*/
@@ -1317,7 +1372,8 @@ were hidden (via .neverending) before. */
 .fancy-background h4,
 .fancy-background h5,
 .fancy-background h6,
-.fancy-background p {
+.fancy-background p,
+.fancy-background strong {
 	color: var(--color-theme-white);
 	text-shadow: var(--special-text-shadow);
 	position: relative;
