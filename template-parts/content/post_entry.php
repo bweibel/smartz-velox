@@ -18,13 +18,14 @@ namespace WP_Rig\WP_Rig;
 		?>
 		
 	</header>
+	
+	<div class="post-content">
+		<?php
+		get_template_part( 'template-parts/content/entry_thumbnail' );
+		get_template_part( 'template-parts/content/entry_summary', get_post_type() );
+		?>
+	</div>
 	<?php
-
-
-	get_template_part( 'template-parts/content/entry_thumbnail' );
-	get_template_part( 'template-parts/content/entry_summary', get_post_type() );
-
-
 	get_template_part( 'template-parts/content/entry_footer', get_post_type() );
 	?>
 </article><!-- #post-<?php the_ID(); ?> -->

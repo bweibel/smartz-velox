@@ -721,8 +721,8 @@ select {
 }
 
 .home .site-footer{
-	padding: 150px 0 5em 0 ;
-	margin-top: -120px;
+	padding: 230px 0 5em 0 ;
+	margin-top: -200px;
 }
  
 .site-info {
@@ -812,6 +812,23 @@ were hidden (via .neverending) before. */
 	text-align: center;
 	margin: 0;
 	color: var(--color-theme-white);
+}
+
+
+@media (--wide-window) {
+	.blog .post-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.blog .post-content .post-thumbnail {
+		flex-basis: 40%;
+		padding-right: 1em;
+	}
+	.blog .post-content .entry-summary {
+		flex-grow: 1;
+		flex-basis: 60%;
+	}
 }
 
 .blog .post .entry-title {
