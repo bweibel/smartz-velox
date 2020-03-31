@@ -22,12 +22,16 @@ html {
 
 /* stylelint-disable */
 body {
-	background: var(--color-theme-darkblue);
+	/* background: var(--color-theme-darkblue); */
 	/* Fallback for when there is no custom background color defined. */
 }
 
 .site {
 	background: var(--color-theme-white);
+}
+
+.site-main {
+	min-height: 100vh;
 }
 /* stylelint-enable */
 

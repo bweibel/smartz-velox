@@ -1321,24 +1321,52 @@ were hidden (via .neverending) before. */
 	Custom Form Element
 	--------------------------------------------------------------
 */
+#options {
+	display: none;
+}
+
 .management-options,
 .security-options {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
+.info > header,
+.summary > header,
+.management-options > header,
+.security-options > header {
+	grid-column: span 2;
+	background: var(--color-theme-darkblue);
+}
+
+.summary h3,
+.info h3,
 .management-options h3,
 .security-options h3 {
-	grid-column: span 2 ;
+	color: var(--color-theme-white);
+
 	text-align: center;
+	font-size: 24px;
+}
+
+.info, .summary {
+	display: grid;
 }
 
 .option-card {
-	max-width: 20em;
+	grid-column: span 2;
+	min-width: 20em;
 	border: 1px solid var(--color-theme-grey);
 	border-radius: 4px;
 	transition: box-shadow .25s;
-	margin: auto;
+	margin: 1em;
+	cursor: pointer;
+}
+
+@media (--wide-window) {
+	.option-card {
+		grid-column: span 1;
+	}
 }
 
 .option-card:hover {
@@ -1351,8 +1379,31 @@ were hidden (via .neverending) before. */
 }
 
 .option-card header,
-.option-card .description {
+.option-card .description,
+.prices {
 	padding: 0.5em 1em;
+}
+
+.prices {
+	grid-column: span 2;
+	margin: 2em auto;
+}
+
+.prices h4 {
+	font-size: 20px;
+}
+
+.prices h4 span {
+	color: var(--color-theme-darkblue)
+}
+
+.prices table {
+	border: 1px solid var(--color-theme-grey);
+}
+
+.prices td {
+	padding: .5em 1em;
+	background:var(--color-theme-lightgrey) ;
 }
 
 .option-card header > * {
@@ -1371,6 +1422,44 @@ were hidden (via .neverending) before. */
 .option-card .description {
 
 }
+
+.wizard .button-wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.wizard button, .wizard input[type="button"], .wizard input[type="submit"]{
+	background: var(--color-theme-primary);
+	background-image: linear-gradient(180deg, var(--color-theme-altblue) 0% var(--color-theme-darkblue) 100%);
+	border-radius: 3px;
+	color: var(--color-theme-white);
+	font: 900 16px 'Montserrat', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: var(--special-text-shadow);
+	transition: filter .2s ease;
+	padding: 1em 2em;
+	margin: 1em;
+}
+
+.wizard label {
+	font-size: 12px;
+font-weight: bold;
+}
+.wizard .wpcf7-form-control-wrap {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.wizard .wpcf7-form-control-wrap input {
+	padding: .5em 1em ;
+}
+
+.wizard .wpcf7-form-control-wrap input:focus {
+	box-shadow: 0 0 20px var(--color-theme-blue);
+	border: 1px solid var(--color-theme-blue);
+} 
+
 
 /*--------------------------------------------------------------
 # Extras
