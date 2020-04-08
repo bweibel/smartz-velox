@@ -42,9 +42,9 @@ wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-front-page' );
 		<!-- #video -->
 
 		<!-- #testimonials -->
-		<section class="testimonials wrap">
+		<section class="testimonials wrap-large">
 				<h1>What Our Customers Are Saying</h1>
-				<div id="popup-rating-widget"><script id="popup-rating-widget-script" src="https://widget.reviewability.com/js/popupWidget.min.js" data-gfspw="https://smartsolutions.reviewability.com/popup-pixel/get/83bf6561ba40f7e1c11c1c47c0b4bb4b6982726c?clientId=103501" async></script></div>
+				<div data-bid="28546" data-url="https://smartsolutions.reviewability.com" ><script src="https://widget.reviewability.com/js/widgetAdv.min.js" async></script></div><script class="json-ld-content" type="application/ld+json"></script>
 		</section>
 		<!-- #testimonials -->
 		
