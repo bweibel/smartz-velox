@@ -1094,6 +1094,7 @@ were hidden (via .neverending) before. */
 */
 .testimonials h1 {
 	text-align: center;
+	margin: 5rem;
 }
 
 @media (--wide-window) {
@@ -1109,6 +1110,11 @@ were hidden (via .neverending) before. */
 .featured-post {
 	padding: 1.5em 0;
 	text-align: center;
+}
+
+.featured-post h1 {
+	text-align: center;
+	margin: 2rem;
 }
 
 .featured-post article {
@@ -1141,7 +1147,7 @@ were hidden (via .neverending) before. */
 	.featured-post article {
 		grid-column-gap: 1em;
 		grid-template-columns: 1fr 1fr;	
-		grid-template-rows: 1fr 2fr auto;
+		grid-template-rows: auto;
 	}
 
 	.featured-post .entry-title {
