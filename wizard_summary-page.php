@@ -99,13 +99,19 @@ function parseCookie() {
 
 </script>
 
-	<main id="primary" class="site-main wizard">
+	<main id="primary" class="site-main">
 		<?php
-
+    get_template_part( 'template-parts/wizard/wizard_header');
+    
 		while ( have_posts() ) {
 			the_post();
-
-      get_template_part( 'template-parts/content/entry', 'page' );
+      echo '<section class="wizard wrap summary">';
+      get_template_part( 'template-parts/wizard/form_header');
+      get_template_part( 'template-parts/content/entry_content', get_post_type() );
+      get_template_part( 'template-parts/wizard/summary_prices');
+      
+      echo do_shortcode( get_field('form_shortcode'));
+      echo '</section>';
 		}
 		?>
 	</main><!-- #primary -->

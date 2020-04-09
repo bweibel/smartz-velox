@@ -11,15 +11,10 @@ use WP_Query;
 
 <?php 
 $form_options = get_field('selector_options');
-
-$args = array( 
-	'post_type' => 'form_option',
-);
-$the_query = new WP_Query( $args ); 
 ?>
 
 <section class="management-options">
-	<div class="container wrap-large">
+	<div class="options-list">
 
 	<?php 
 	if($form_options) {
@@ -33,8 +28,4 @@ $the_query = new WP_Query( $args );
 
 	</div>
 </section>
-<?php 
-
-echo do_shortcode( get_field('form_shortcode'));
-?>
 

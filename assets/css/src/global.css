@@ -1325,32 +1325,19 @@ were hidden (via .neverending) before. */
 	display: none;
 }
 
-.management-options,
-.security-options {
+.options-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-.info > header,
-.summary > header,
-.management-options > header,
-.security-options > header {
-	grid-column: span 2;
-	background: var(--color-theme-darkblue);
+.wizard {
+	background: whitesmoke;
+	padding: 1em;
 }
 
-.summary h3,
-.info h3,
-.management-options h3,
-.security-options h3 {
-	color: var(--color-theme-white);
-
+.wizard header h3 {
 	text-align: center;
 	font-size: 24px;
-}
-
-.info, .summary {
-	display: grid;
 }
 
 .option-card {
@@ -1380,13 +1367,21 @@ were hidden (via .neverending) before. */
 
 .option-card header,
 .option-card .description,
-.prices {
+.price {
 	padding: 0.5em 1em;
 }
 
+.option-card .extra-info.hidden {
+	display: none;
+}
+
+.wizard.summary {
+	padding: 1em;
+}
+
 .prices {
-	grid-column: span 2;
-	margin: 2em auto;
+	max-width: 40em;
+	margin: auto;
 }
 
 .prices h4 {
@@ -1398,6 +1393,7 @@ were hidden (via .neverending) before. */
 }
 
 .prices table {
+
 	border: 1px solid var(--color-theme-grey);
 }
 
@@ -1412,20 +1408,37 @@ were hidden (via .neverending) before. */
 }
 
 .option-card .option-title {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .option-card .option-subtitle {
 	font-size: 14px;
 }
 
-.option-card .description {
-
+.wizard form {
+	max-width: 65em;
+	margin: auto;
 }
 
-.wizard .button-wrap {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+.wizard .form-group {
+	max-width: 100%;
+	margin: auto;
+	width: 30em;
+}
+
+.wizard input {
+	max-width: 100%;
+}
+
+
+.wizard form .button-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.wizard form .ajax-loader {
+	display: none;
 }
 
 .wizard button, .wizard input[type="button"], .wizard input[type="submit"]{
@@ -1442,6 +1455,12 @@ were hidden (via .neverending) before. */
 	margin: 1em;
 }
 
+
+.wizard input[type="button"].wpcf7-previous {
+	background: none;
+	color: var(--color-theme-darkblue);
+}
+
 .wizard label {
 	font-size: 12px;
 font-weight: bold;
@@ -1453,10 +1472,11 @@ font-weight: bold;
 
 .wizard .wpcf7-form-control-wrap input {
 	padding: .5em 1em ;
+	transition: box-shadow .5s;
 }
 
 .wizard .wpcf7-form-control-wrap input:focus {
-	box-shadow: 0 0 20px var(--color-theme-blue);
+	box-shadow: 0 0 10px var(--color-theme-blue);
 	border: 1px solid var(--color-theme-blue);
 } 
 
@@ -1479,7 +1499,8 @@ font-weight: bold;
 .fancy-background h5,
 .fancy-background h6,
 .fancy-background p,
-.fancy-background strong {
+.fancy-background strong,
+.fancy-background span {
 	color: var(--color-theme-white);
 	text-shadow: var(--special-text-shadow);
 	position: relative;

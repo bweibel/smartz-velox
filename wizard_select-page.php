@@ -78,18 +78,20 @@ function parseCookie() {
 
 </script>
 
-	<main id="primary" class="site-main wizard select">  
+	<main id="primary" class="site-main">  
 
 		<?php
+    get_template_part( 'template-parts/wizard/wizard_header');
 
 		while ( have_posts() ) {
       the_post();
-      
-      get_template_part( 'template-parts/content/entry_header', get_post_type() );
-      get_template_part( 'template-parts/wizard/header');
+      echo '<section class="wizard select wrap-large">';
+      get_template_part( 'template-parts/wizard/form_header');
       get_template_part( 'template-parts/content/entry_content', get_post_type() );
       get_template_part( 'template-parts/wizard/options_list' );
-      // [TODO form insert]      
+      
+      echo do_shortcode( get_field('form_shortcode'));
+      echo '</section>';
 		}
     ?>
 	</main><!-- #primary -->
