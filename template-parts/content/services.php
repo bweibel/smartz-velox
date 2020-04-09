@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the call to action
+ * Template part for displaying the services list
  *
  * @package wp_rig
  */
