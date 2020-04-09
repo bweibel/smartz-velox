@@ -14,14 +14,15 @@ $team_link = 'meet-the-team';
 ?>
 
 <article class="team-member wrap">
-  
-  <?php the_post(); ?>
-  <?php the_title('<h2 class="team-name">','</h2>');?>
-  <h3 class="job-title"><?php the_field( "job_title" );?></h3>
-  <?php get_template_part( 'template-parts/content/entry_thumbnail', get_post_type() );?>
-  <div class="team-description">
-    <?php the_content(); ?>
-  </div>
+  <?php 
+  the_post();
+  the_title('<h2 class="team-name">','</h2>');
+  printf("<h3 class='job-titles'>%s</h3> ", $job_title);
+  get_template_part( 'template-parts/content/entry_thumbnail', get_post_type() );
+  echo '<div class="team-description">';
+    the_content();
+  echo '</div>';
+  ?>
   <a href="<?php printf($team_link) ?>" class="button">
     <span class="dashicons dashicons-arrow-left"></span>Meet the Team
   </a>
