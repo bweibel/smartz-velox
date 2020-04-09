@@ -8,6 +8,17 @@
 namespace WP_Rig\WP_Rig;
 
 $theme = get_template_directory_uri();
+$DEFAULT_IMG = $theme . "/assets/images/Velox-Caricatures-Jordan@2x.png";
+
+$image = get_field('cta_image');
+if(empty( $image )) {
+  $imageUri = $DEFAULT_IMG;
+  $imageAttrs = "Caricature";
+} else {
+  $imageUri = esc_url($image['url']);
+  $imageAttrs = esc_attr($image['alt']);
+}
+
 ?>
 <section class="call-to-action fancy-background sloped">
   <div class="wrap wrap-large">
@@ -17,7 +28,7 @@ $theme = get_template_directory_uri();
       <?php the_field( "cta_copy" ); ?>
     </section>
     <figure>
-      <img src=<?php printf($theme . "/assets/images/Velox-Caricatures-Jordan@2x.png")?> alt="Caricature" role="presentation">
+    <?php printf("<img src='$imageUri' alt='$imageAttrs' class='icon-service' role='presentation'/>");?>
     </figure>
     <a href="<?php the_field( "cta_button_link" ); ?>" class="button button--big">
       <?php the_field( "cta_button_text" ); ?>
