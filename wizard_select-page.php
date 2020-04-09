@@ -78,15 +78,18 @@ function parseCookie() {
 
 </script>
 
-	<main id="primary" class="site-main wizard">  
+	<main id="primary" class="site-main wizard select">  
 
-    
 		<?php
 
 		while ( have_posts() ) {
-			the_post();
-
-      get_template_part( 'template-parts/content/entry', 'page' );
+      the_post();
+      
+      get_template_part( 'template-parts/content/entry_header', get_post_type() );
+      get_template_part( 'template-parts/wizard/header');
+      get_template_part( 'template-parts/content/entry_content', get_post_type() );
+      get_template_part( 'template-parts/wizard/options_list' );
+      // [TODO form insert]      
 		}
     ?>
 	</main><!-- #primary -->
