@@ -17,6 +17,8 @@ namespace WP_Rig\WP_Rig;
 
 	?>
 </header><!-- .entry-header -->
+<?php get_template_part( 'template-parts/header/custom_header' ); ?>
+
 <?php
 	if ( ! is_search() ) {
 		get_template_part( 'template-parts/content/entry_thumbnail', get_post_type() );
