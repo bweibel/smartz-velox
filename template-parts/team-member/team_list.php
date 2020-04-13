@@ -13,7 +13,7 @@ $theme = get_template_directory_uri();
 
 $args = array( 
   'post_type' => 'team_member',
-  'orderby'     => 'title',
+  'orderby'     => 'date',
   'order'     => 'ASC',
   'posts_per_page' => -1
 );
