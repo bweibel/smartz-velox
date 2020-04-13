@@ -720,6 +720,16 @@ select {
 	padding: 2em 0;
 }
 
+.site-footer h1,
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.site-footer h5,
+.site-footer h6{
+	color: var(--color-theme-white);
+}
+
+
 .home .site-footer{
 	padding: 230px 0 5em 0 ;
 	margin-top: -200px;
@@ -727,6 +737,48 @@ select {
  
 .site-info {
 	text-align: center;
+}
+
+.site-footer .phone {
+	color: var(--color-theme-white);
+	display: block;
+	margin: auto;
+}
+
+.site-footer .address {
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+}
+
+.site-footer .social-icons {
+	text-align: center;
+}
+
+.site-footer .social-icons a {
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	display: inline-block;
+	background-size: contain;
+	margin: 0 .5em;
+	text-align: center;
+}
+
+.site-footer .social-icons a:hover {
+	filter: brightness(.9)
+} 
+
+.site-footer .social-icons .facebook{
+	background-image: url('../images/Velox-Website-Icon-Social-Facebook.svg');
+}
+
+.site-footer .social-icons .twitter{
+	background-image: url('../images/Velox-Website-Icon-Social-Twitter.svg');
+}
+
+.site-footer .social-icons .linkedin{
+	background-image: url('../images/Velox-Website-Icon-Social-LinkedIn.svg');
 }
 
 /* footer mobile menu */
@@ -932,8 +984,8 @@ were hidden (via .neverending) before. */
 }
 
 .services .container {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	display: flex;
+	flex-wrap: nowrap;
 	padding: 1em 1.5em;
 	overflow: auto;
 }
@@ -944,7 +996,6 @@ were hidden (via .neverending) before. */
 	}
 
 	.services .container{
-		display: flex;
     padding: 0;
     flex-wrap: wrap;
     justify-content: center;
@@ -956,8 +1007,9 @@ were hidden (via .neverending) before. */
 	border-radius: 23px;
 	padding: 1em;
 	margin: 1em;
-	width: 80vw;
-	max-width: 20em;
+	min-width: 20em;
+	max-width: 80vw;
+	width: 20em;
 	height: 80vw;
 	max-height: 20em;
 	text-align: center;
