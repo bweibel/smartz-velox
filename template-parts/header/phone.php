@@ -6,5 +6,9 @@
  */
 
 namespace WP_Rig\WP_Rig;
+
 ?>
-<a href="tel:1-541-639-4397" class="phone">(541) 639-4397</a>
+<a href="tel:<?php echo get_theme_mod('phone_number');?>" class="phone"><?php echo get_theme_mod('phone_number_display');?></a>
+
+
+		

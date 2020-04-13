@@ -1,11 +1,11 @@
 <?php
 /**
- * WP_Rig\WP_Rig\Archive_Content\Component class
+ * WP_Rig\WP_Rig\Contact_Info\Component class
  *
  * @package wp_rig
  */
 
-namespace WP_Rig\WP_Rig\Archive_Content;
+namespace WP_Rig\WP_Rig\Contact_Info;
 
 use WP_Rig\WP_Rig\Component_Interface;
 use WP_Rig\WP_Rig\Templating_Component_Interface;
@@ -28,7 +28,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @return string Component slug.
 	 */
 	public function get_slug() : string {
-		return 'phone_number';
+		return 'contact_info';
 	}
 
 	/**
@@ -47,34 +47,73 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 */
 	public function template_tags() : array {
 		return array(
-			'using_phone_number' => array( $this, 'using_phone_number' ),
 		);
 	}
 
 	/**
-	 * Adds a Customizer setting and control for toggling usage of Phone number in header
+	 * Adds a Customizer setting and control for toggling usage of `the_content()` or `the_excerpt()` in archives.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Customizer manager instance.
 	 */
 	public function action_register_customizer_control( WP_Customize_Manager $wp_customize ) {
-		// Register the Customizer setting and ensure its value is a boolean.
+
+		$wp_customize->add_section( 'contact_info', array(
+			'title' => __( 'Contact Info' ),
+			'description' => __( 'Contact Info' ),
+			'priority' => 160,
+			'capability' => 'edit_theme_options',
+		) );
+
 		$wp_customize->add_setting(
-			'use_phonenumber',
+			'phone_number',
 			array(
-				'default'           => true,
-				'sanitize_callback' => 'rest_sanitize_boolean',
+				'default'           => "1-555-123-4567",
 			)
 		);
 
-		// Register the Customizer control for the setting, using a checkbox.
 		$wp_customize->add_control(
-			'archives_use_excerpt',
+			'phone_number',
 			array(
-				'label'   => __( 'Show Phone Number?', 'wp-rig' ),
-				'section' => 'homepage_settings',
-				'type'    => 'checkbox',
+				'label'   => __( 'Phone Number Formatted', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
 			)
 		);
+
+		$wp_customize->add_setting(
+			'phone_number_display',
+			array(
+				'default'           => "(555) 123-4567",
+			)
+		);
+
+		$wp_customize->add_control(
+			'phone_number_display',
+			array(
+				'label'   => __( 'Phone Number Display', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
+			)
+		);
+
+		$wp_customize->add_setting(
+			'address',
+			array(
+				'default'           => "2700 NE 4th St
+				Suite 2​10
+				Bend OR, 97701",
+			)
+		);
+
+		$wp_customize->add_control(
+			'address',
+			array(
+				'label'   => __( 'Address', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
+			)
+		);
+		
 	}
 
 	/**

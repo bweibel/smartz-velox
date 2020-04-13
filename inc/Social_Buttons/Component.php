@@ -1,11 +1,11 @@
 <?php
 /**
- * WP_Rig\WP_Rig\Archive_Content\Component class
+ * WP_Rig\WP_Rig\Social_Buttons\Component class
  *
  * @package wp_rig
  */
 
-namespace WP_Rig\WP_Rig\Archive_Content;
+namespace WP_Rig\WP_Rig\Social_Buttons;
 
 use WP_Rig\WP_Rig\Component_Interface;
 use WP_Rig\WP_Rig\Templating_Component_Interface;
@@ -28,7 +28,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * @return string Component slug.
 	 */
 	public function get_slug() : string {
-		return 'archive_content';
+		return 'social_buttons';
 	}
 
 	/**
@@ -47,7 +47,6 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 */
 	public function template_tags() : array {
 		return array(
-			'using_archive_excerpts' => array( $this, 'using_archive_excerpts' ),
 		);
 	}
 
@@ -59,46 +58,53 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	public function action_register_customizer_control( WP_Customize_Manager $wp_customize ) {
 
 		$wp_customize->add_setting(
-			'archives_use_excerpt2',
+			'social_facebook',
 			array(
-				'default'           => false,
-				'sanitize_callback' => 'rest_sanitize_boolean',
-			)
-		);
-		// Register the Customizer setting and ensure its value is a boolean.
-		$wp_customize->add_setting(
-			'archives_use_excerpt',
-			array(
-				'default'           => false,
-				'sanitize_callback' => 'rest_sanitize_boolean',
+				'default'           => '',
 			)
 		);
 
-		// Register the Customizer control for the setting, using a checkbox.
 		$wp_customize->add_control(
-			'archives_use_excerpt',
+			'social_facebook',
 			array(
-				'label'   => __( 'Use excerpts in archive views?', 'wp-rig' ),
-				'section' => 'theme_options',
-				'type'    => 'checkbox',
+				'label'   => __( 'Facebook link', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
 			)
 		);
-		$wp_customize->add_control(
-			'archives_use_excerpt2',
+
+		$wp_customize->add_setting(
+			'social_twitter',
 			array(
-				'label'   => __( 'Use excerpts in archive views?', 'wp-rig' ),
-				'section' => 'test_section',
-				'type'    => 'checkbox',
+				'default'           => '',
 			)
 		);
-		$wp_customize->add_section( 'test_section', array(
-			'title' => __( 'Test' ),
-			'description' => __( 'Add custom CSS here' ),
-			'panel' => '', // Not typically needed.
-			'priority' => 160,
-			'capability' => 'edit_theme_options',
-			'theme_supports' => '', // Rarely needed.
-		) );
+
+		$wp_customize->add_control(
+			'social_twitter',
+			array(
+				'label'   => __( 'Twitter link', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
+			)
+		);
+
+		$wp_customize->add_setting(
+			'social_linkedin',
+			array(
+				'default'           => '',
+			)
+		);
+
+		$wp_customize->add_control(
+			'social_linkedin',
+			array(
+				'label'   => __( 'LinkedIn link', 'wp-rig' ),
+				'section' => 'contact_info',
+				'type'    => 'text',
+			)
+		);
+		
 	}
 
 	/**
