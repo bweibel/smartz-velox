@@ -17,7 +17,6 @@ $cost = get_field('option_cost');
     <?php 
       the_title('<h2 class="option-title">','</h2>'); 
       printf('<h2 class="option-subtitle">%s</h2>', $subTitle);
-      printf('<p class="price">$%s/user/month</p>', $cost);
       ?>
   </header>
   <div class="description">
@@ -26,7 +25,7 @@ $cost = get_field('option_cost');
     if(!empty($extraInfo)){
       get_template_part( 'template-parts/wizard/extra_info' );
     }
-    
+    printf('<span class="price" >$%s/user/month</span>', $cost);
     
   ?>
 

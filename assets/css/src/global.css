@@ -1389,7 +1389,7 @@ were hidden (via .neverending) before. */
 }
 
 .wizard {
-	background: whitesmoke;
+	/* background: whitesmoke; */
 	padding: 1em;
 }
 
@@ -1433,6 +1433,15 @@ were hidden (via .neverending) before. */
 	display: none;
 }
 
+.option-card .price {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	color: var(--color-theme-darkblue);
+}
+
 .wizard.summary {
 	padding: 1em;
 }
@@ -1451,7 +1460,6 @@ were hidden (via .neverending) before. */
 }
 
 .prices table {
-
 	border: 1px solid var(--color-theme-grey);
 }
 
