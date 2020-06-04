@@ -729,6 +729,14 @@ select {
 	color: var(--color-theme-white);
 }
 
+.site-footer a,
+.site-footer a:visited{
+	color: var(--color-theme-white);
+}
+
+.site-footer a:hover{
+	color: var(--color-theme-blue)
+}
 
 .home .site-footer{
 	padding: 230px 0 5em 0 ;
