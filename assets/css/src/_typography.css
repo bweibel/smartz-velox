@@ -3,6 +3,24 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@media (--hires) {
+	html {
+		font-size: 120%;
+	}
+}
+
+@media (--hd-hires) {
+	html {
+		font-size: 140%;
+	}
+}
+
+@media (--uhd-hires) {
+	html {
+		font-size: 160%;
+	}
+}
+
 /* stylelint-disable */
 body,
 button,

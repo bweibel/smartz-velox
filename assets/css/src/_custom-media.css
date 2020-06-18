@@ -14,3 +14,8 @@
 
 @custom-media --narrow-window screen and (max-width: 37.5);
 @custom-media --wide-window screen and (min-width: 37.5em);
+
+
+@custom-media --hires screen and (min-width: 1600px);
+@custom-media --hd-hires screen and (min-width: 2560px);
+@custom-media --uhd-hires screen and (min-width: 3840px);
