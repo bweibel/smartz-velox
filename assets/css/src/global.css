@@ -83,6 +83,10 @@
 	.desktop-hide{
 		display: none;
 	}
+	.entry-content img {
+		float: none;
+		margin: auto;
+	}
 }
 
 @media (--wide-window) {
@@ -92,6 +96,7 @@
 	.desktop-hide{
 		display: initial;
 	}
+	
 }
 
 /*--------------------------------------------------------------
@@ -542,7 +547,7 @@ select {
 		color: var(--color-theme-blue);
 		font-family: var(--global-font-family);
 		padding: 1.2em 0.5em .9em;
-		font-size: 16px;
+		font-size: 1rem;
 		border-bottom: .25em solid white;
 		transition: filter .2s;
 		text-transform: uppercase;

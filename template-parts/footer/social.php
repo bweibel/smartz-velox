@@ -15,7 +15,7 @@ if($facebook || $twitter || $linkedin) {
 	echo '<div class="social-icons">';
 	echo '<h3>Connect With Us</h3>';
 	if($facebook) {
-		printf('<a href="https://www.facebook.com/veloxsysystems" class="facebook" target="_blank" aria-label="Visit us on Facebook"></a>', $facebook);
+		printf('<a href="https://www.facebook.com/veloxsystemsbend" class="facebook" target="_blank" aria-label="Visit us on Facebook"></a>', $facebook);
 	}
 	if($twitter) {
 		printf('<a href="https://twitter.com/VeloxSystem" class="twitter" target="_blank" aria-label="Visit us on Twitter"></a>', $twitter);

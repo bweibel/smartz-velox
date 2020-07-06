@@ -15,11 +15,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. translators: 1: title.
-#: comments.php:38
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
-
 #. translators: 1: comment count number, 2: title.
 #: comments.php:44
 msgctxt "comments title"
@@ -28,12 +23,40 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
+#: comments.php:38
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
 #: comments.php:60
 msgid "Comments are closed."
 msgstr ""
 
-#: header.php:36
+#: header.php:50
 msgid "Skip to content"
+msgstr ""
+
+#: services-page.php:3
+msgid "Services Template"
+msgstr ""
+
+#: single-team_member.php:3
+msgid "Custom Post Template"
+msgstr ""
+
+#: team_page.php:3
+msgid "Team Template"
+msgstr ""
+
+#: wizard-page.php:3
+msgid "Wizard Template"
+msgstr ""
+
+#: wizard_select-page.php:3
+msgid "Wizard Select Template"
+msgstr ""
+
+#: wizard_summary-page.php:3
+msgid "Wizard Summary Template"
 msgstr ""
 
 #. translators: 1: required WP version number, 2: required PHP version number, 3: available WP version number, 4: available PHP version number
@@ -77,7 +100,7 @@ msgid "The theme component %1$s does not implement the %2$s interface."
 msgstr ""
 
 #. translators: %s: slug
-#: inc/Theme.php:120
+#: inc/Theme.php:122
 msgid "No theme component with the slug %s exists."
 msgstr ""
 
@@ -89,8 +112,24 @@ msgstr ""
 msgid "Collapse child menu"
 msgstr ""
 
+#: inc/Archive_Content/Component.php:81, inc/Archive_Content/Component.php:89
+msgid "Use excerpts in archive views?"
+msgstr ""
+
 #: inc/Comments/Component.php:132
 msgid "New comment(s)"
+msgstr ""
+
+#: inc/Contact_Info/Component.php:77
+msgid "Phone Number Formatted"
+msgstr ""
+
+#: inc/Contact_Info/Component.php:93
+msgid "Phone Number Display"
+msgstr ""
+
+#: inc/Contact_Info/Component.php:111
+msgid "Address"
 msgstr ""
 
 #: inc/Customizer/Component.php:77
@@ -190,11 +229,23 @@ msgid "Lazy-loading images means images are loaded only when they are in view. I
 msgstr ""
 
 #: inc/Sidebars/Component.php:69
-msgid "Sidebar"
+msgid "Footer"
 msgstr ""
 
 #: inc/Sidebars/Component.php:71
 msgid "Add widgets here."
+msgstr ""
+
+#: inc/Social_Buttons/Component.php:70
+msgid "Facebook link"
+msgstr ""
+
+#: inc/Social_Buttons/Component.php:86
+msgid "Twitter link"
+msgstr ""
+
+#: inc/Social_Buttons/Component.php:102
+msgid "LinkedIn link"
 msgstr ""
 
 #. translators: %s: stylesheet handle
@@ -202,11 +253,11 @@ msgstr ""
 msgid "Invalid theme stylesheet handle: %s"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:32
+#: template-parts/content/entry-attachment.php:33, template-parts/content/entry.php:32, template-parts/content/post_entry.php:39
 msgid "Previous:"
 msgstr ""
 
-#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:33
+#: template-parts/content/entry-attachment.php:43, template-parts/content/entry.php:33, template-parts/content/post_entry.php:40
 msgid "Next:"
 msgstr ""
 
@@ -305,30 +356,29 @@ msgstr ""
 msgid "Oops! It looks like you&#8217;re offline."
 msgstr ""
 
-#. translators: 1: link to WP admin new post page.
-#: template-parts/content/error.php:23
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: template-parts/content/error.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
 #: template-parts/content/error.php:38
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content/error.php:44
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#: template-parts/content/error.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content/page_header.php:14
-msgid "Oops! That page can&rsquo;t be found."
+#. translators: %s: search query
+#: template-parts/content/page_header.php:41
+msgid "Search Results for: %s"
 msgstr ""
 
 #: template-parts/content/page_header.php:22
 msgid "Nothing Found"
 msgstr ""
 
-#. translators: %s: search query
-#: template-parts/content/page_header.php:41
-msgid "Search Results for: %s"
+#: template-parts/content/page_header.php:14
+msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: template-parts/content/pagination.php:13
@@ -345,25 +395,11 @@ msgstr ""
 msgid "Page navigation"
 msgstr ""
 
-#: template-parts/footer/info.php:13
-msgid "https://wordpress.org/"
-msgstr ""
-
-#. translators: %s: CMS name, i.e. WordPress.
-#: template-parts/footer/info.php:16
-msgid "Proudly powered by %s"
-msgstr ""
-
-#. translators: Theme name.
-#: template-parts/footer/info.php:22
-msgid "Theme: %s by the contributors."
-msgstr ""
-
-#: template-parts/header/navigation.php:16
+#: template-parts/footer/navigation.php:18, template-parts/header/navigation.php:16
 msgid "Main menu"
 msgstr ""
 
-#: template-parts/header/navigation.php:39
+#: template-parts/footer/navigation.php:37, template-parts/header/navigation.php:39
 msgid "Open menu"
 msgstr ""
 
