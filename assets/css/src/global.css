@@ -548,7 +548,7 @@ select {
 
 
 	.main-navigation ul ul li a{
-		color: var(--color-theme-blue);
+		color: var(--color-theme-white);
 	}
 }
 
@@ -558,11 +558,19 @@ select {
 		background: var(--color-theme-darkblue);
 	}
 
+	.main-navigation .sub-menu li:hover > a{
+		color: var(--color-theme-secondary);
+	}
+
 	.main-navigation .sub-menu .sub-menu{
 		background: var(--color-theme-secondary);
 	}
 
 	.main-navigation .sub-menu .sub-menu a {
+		color: var(--color-theme-white);
+	}
+
+	.main-navigation .sub-menu .sub-menu a:hover {
 		color: var(--color-theme-primary);
 	}
 
@@ -578,8 +586,7 @@ select {
 	}
 
 	
-	.main-navigation ul li a:hover,
-	.main-navigation .current_page_item a{
+	.main-navigation .menu > .current_page_item > a{
 		filter: brightness(0.6);
 	}
 
@@ -809,7 +816,8 @@ select {
 }
 
 .site-footer .social-icons a:hover {
-	filter: brightness(.9)
+	filter: brightness(.9);
+
 } 
 
 .site-footer .social-icons .facebook{
@@ -822,6 +830,13 @@ select {
 
 .site-footer .social-icons .linkedin{
 	background-image: url('../images/Velox-Website-Icon-Social-LinkedIn.svg');
+}
+
+.site-footer .velox-links {
+	max-width: var(--content-width);
+	margin: 3em auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 /* footer mobile menu */

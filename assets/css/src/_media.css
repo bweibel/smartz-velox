@@ -12,6 +12,10 @@
 	padding: 0;
 }
 
+.entry-content img {
+	margin-bottom: 1em;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
