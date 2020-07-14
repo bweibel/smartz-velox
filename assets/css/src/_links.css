@@ -41,13 +41,16 @@ a:active {
 	text-shadow: var(--special-text-shadow);
 	transition: filter .2s ease;
 	padding: 1em 2em;
+	margin-bottom: 1em;
 }
 
 .button,
 .button:hover,
 .button:active,
 .button:focus,
-.button:visited {
+.button:visited, 
+.site-footer .button:hover
+{
 	color: var(--color-theme-white);
 }
 
@@ -60,4 +63,14 @@ a:active {
 	filter: brightness(0.9);
 	position: relative;
 	top: 2px;
+}
+
+.button img {
+	margin: -10px .5em -10px -1em;
+	margin-bottom: -10px;
+	display: inline-block;
+}
+
+.button-alt {
+	background: var(--color-theme-secondary);
 }
