@@ -17,7 +17,7 @@ $themeUri = get_template_directory_uri();
 
 <nav id="site-footer-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="<?php esc_attr_e( 'Main menu', 'wp-rig' ); ?>">
 
-  <a class="menu-icon" href="/services">
+  <a class="menu-icon" href="/it-services">
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Services.svg")?> alt="Services">
     Services
   </a>
@@ -25,11 +25,11 @@ $themeUri = get_template_directory_uri();
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Industries.svg")?> alt="Industries">
     Industries
   </a>
-  <a class="menu-icon" href="/resources">
-    <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Resources.svg")?> alt="Resources">
+  <a class="menu-icon" href="/insights">
+    <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Resources.svg")?> alt="Insights">
     Resources
   </a>
-  <a class="menu-icon" href="/about">
+  <a class="menu-icon" href="/technology-for-small-businesses/">
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-About.svg")?> alt="Menu">
     About
   </a>
