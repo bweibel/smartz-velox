@@ -25,9 +25,9 @@ $themeUri = get_template_directory_uri();
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Industries.svg")?> alt="Industries">
     Industries
   </a>
-  <a class="menu-icon" href="/insights">
+  <a class="menu-icon" href="/blog">
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-Resources.svg")?> alt="Insights">
-    Resources
+    Insights
   </a>
   <a class="menu-icon" href="/technology-for-small-businesses/">
     <img src=<?php printf($themeUri . "/assets/images/Velox-Website-Icon-Mobile-About.svg")?> alt="Menu">

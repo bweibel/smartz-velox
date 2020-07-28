@@ -908,10 +908,6 @@ were hidden (via .neverending) before. */
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-.blog {
-
-}
-
 .blog .page-header {
 	background: var(--color-theme-darkblue);
 	margin: 0;
@@ -958,6 +954,57 @@ were hidden (via .neverending) before. */
 .post .post-thumbnail {
 	margin-top: 1.5em;
 }
+
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
+.archive .page-header {
+	background: var(--color-theme-darkblue);
+	margin: 0;
+	padding: 1rem;
+}
+
+.archive .page-title{
+	text-align: center;
+	margin: 0;
+	color: var(--color-theme-white);
+}
+
+
+@media (--wide-window) {
+	.archive .post-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.archive .post-content .post-thumbnail {
+		flex-basis: 40%;
+		padding-right: 1em;
+	}
+	.archive .post-content .entry-summary {
+		flex-grow: 1;
+		flex-basis: 60%;
+	}
+}
+
+.archive .post .entry-title {
+	margin: 0;
+}
+
+.archive .post .entry-title a{
+	text-decoration: none;
+	color: var(--color-theme-white);
+}
+
+.archive .entry-meta,
+.archive .entry-meta a {
+	color: var(--color-theme-white);
+}
+
+.post .post-thumbnail {
+	margin-top: 1.5em;
+}
+
 /*--------------------------------------------------------------
 # Custom Elements
 --------------------------------------------------------------*/
