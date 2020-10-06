@@ -454,7 +454,7 @@ select {
 	clear: both;
 	display: block;
 	margin: 0 auto 0;
-	padding: .8em 1em 0 1em;
+	padding: .8em .5em 0 .5em;
 	max-width: var(--content-width);
 	font-family: var(--global-font-family);
 }
@@ -618,8 +618,9 @@ select {
 	}
 
 	.main-navigation ul ul li a {
-		width: 218px;
+		width: 16em;
 		background: none;
+		font-size: 90%;
 	}
 
 	.main-navigation ul ul ul {
